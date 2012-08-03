@@ -1,0 +1,24 @@
+p{font-family:verdana, arial, sans-serif; margin:0;
+font-size:11px;}
+
+li{font-size:11px;}
+
+br{font-size:11px;}
+
+#header h1 {
+	text-align: center; 
+	font-size: 42pt; font-style: italic;
+	margin: 0;
+}
+#header h2 {
+	text-align: center;
+	font-size: 11pt;
+}
+
+img{ display: none; }
+
+a:link:after,
+a:visited:after {
+  content: " (" attr(href) ") ";
+  font-size: 90%;
+}

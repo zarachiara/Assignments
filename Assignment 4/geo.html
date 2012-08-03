@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+	<title> OlymPICS 2012</title>
+
+	<style>
+
+	
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script type= "text/javascript">
+	$(document).ready(function() {
+			$.ajax({
+	        	type: "GET",
+	        	dataType: "jsonp",
+	        	cache: false,
+	        	url:  "https://api.instagram.com/v1/media/search?lat=51.542141&lng=0.00509&distance=20000?client_id=03193a074f934d1298dcd8f92888eb0e&access_token=200692063.03193a0.8e8dff931843469ba1f59e3879b63203",
+	        	success: function(data) {
+					for (var i = 0; i < 50; i++) {
+					$("#photos").append("<a target='_blank' href='" + data.data[i].link +
+					"'><img src='" + data.data[i].images.low_resolution.url +"'></img></a>");
+					}
+				}
+	   		});
+	
+
+	});
+
+
+	</script>
+	
+	
+	
+
+
+	</head>
+
+	<body>
+
+	<div id= "photos"></div>
+
+	</body>
+
+
+
+
+</html>

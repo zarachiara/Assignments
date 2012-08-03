@@ -1,0 +1,65 @@
+.titles{background-color: #FF8463;}
+
+
+body { margin-left: 10%;
+	   margin-right: 10%;
+}
+h1 {text-align: center;
+font-size: 3em;}
+
+#firstname {color: #C85A17;}
+
+#lastmiddle{color: #7E3817;}
+
+#tree {position: absolute;
+right:130px;
+bottom: -1400px;
+}
+
+h2,h3,h4,h5 {
+	background-color: black; 
+	color: white;
+	font-size: 1.5em;
+}
+
+#education {background-color: #566D7E;
+			color: white;}
+
+#skills {background-color: #AF5F5F; 
+		color: white;}
+
+p{margin-top: 0em; margin-bottom: 0em;
+}
+
+ul {  
+
+}
+
+A:link
+{
+color: black;
+text-decoration: none;
+font-size: 16px;
+font-weight: normal;
+}
+A:visited
+{
+color: black;
+text-decoration: none;
+font-size: 11px;
+font-weight: bold;
+}
+A:hover
+{
+color: black;
+text-decoration: none;
+font-size: 18px;
+
+}
+
+img
+{
+opacity:0.4;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+

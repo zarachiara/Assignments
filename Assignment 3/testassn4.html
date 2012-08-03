@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>jQuery Exercises</title>
+
+<script type="tex/javascript" src="jquery-1.7.2.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js">
+
+</script>
+
+<link href="jquery.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css"> 
+div.panel,p.flip
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#FCC;
+border:solid 1px #c3c3c3;
+text:
+}
+div.panel
+{
+height:450px;
+display:none;
+}
+#draggable{
+	position:relative;
+ }
+</style>
+
+</head>
+
+<body>
+
+<p class="bigtext">Get ready</p>
+
+<p class= "bigtext">to be</p>
+
+<p class= "bigtext">AMAZED!</p>
+
+
+<button id="firstbutton">Click Me</button>
+
+<div id="hide"> Hide </div> 
+<div id="show"> Show </div>
+
+<div id="hidebox">
+  <p>I'm a ghost.</p>
+  </div> 
+
+<div id="clickslide">
+	<p> Click to slide box </p>
+</div>
+
+<div id="slider">
+	<p> Oh hey, I slid. </p>
+</div>
+
+<p>This box will fade into oblivion if you click on it...</p>
+
+<button id="fadebutton">Fade Button</button>
+
+<div id="fader">
+</div>
+
+<br /><br />
+
+<input id="resizeButton" type="button" value="Resize this green box!"/>
+
+<div id="animator">
+</div>
+
+<h2>Please drag me!</h2>
+<div id="draggable">
+<img src="logo.jpeg" border="0"/> 
+</div>
+
+<img src="home_alone.jpeg"alt=home alone movie />
+
+<div id="headline">
+
+
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+   $("#firstbutton").click(function(){
+     alert("Button was clicked");
+   });
+//alert b 
+</script>
+
+<script type="text/javascript">
+  $("div#hide").click(function(){
+    $("div#hidebox").hide("slow");
+});
+
+  $("div#show").click(function(){
+    $("div#hidebox").show("slow");
+
+//Hide and show box of I'm a ghost!! 
+});
+</script>
+
+<script type="text/javascript">
+
+$("div#clickslide").click(function () {
+      $(this).hide("slide", { direction: "up" }, 20);
+});
+
+//sliding Oh hey, I slid box 
+</script>
+
+<script type="text/javascript">
+  $('#fadebutton').hide();
+  $('div#fader').click(function() {
+    $('div#fader').fadeOut('slow', 0.5, function() {
+      // Animation complete.
+  });  
+     $('#fadebutton').show();
+
+  });
+//fading--having problems showing the fade button again as soon as fade out finishes... 
+</script>
+
+<script type="text/javascript">
+$("#fadebutton").click(function() {
+$('div#fader').fadeIn("slow");
+
+});
+
+</script>
+
+<script type="text/javascript">
+
+$("div#fader").click(function() {
+  $('div#fadebutton').show();
+});
+</script>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#resizeButton").click(function(){
+  $('#animator').css({'resize': 'both'});
+  $('#animator').css({'overflow': 'auto'});
+});
+  });
+
+//how do I do this?? Not working as well...I found a jquery code that wants me to download it independently from its site.  Should I do this? 
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $( "#draggable" ).draggable();
+    });
+    </script>
+
+</script>
+
+
+</body>
+</html>
+

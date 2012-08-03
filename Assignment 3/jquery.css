@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body { margin-left: 20%;
+	   margin-right: 20%;
+	   background-color:#6DA69D;}
+
+#hidebox{
+	height: 200px;
+	width:200px;
+	background-color: red;
+
+}
+
+.bigtext 
+{		text-align: center;
+        font-size: 100px;
+        background-color: #A0E0A9;
+}
+
+#slider{
+		height: 200px;
+	width:200px;
+	background-color: orange;
+}
+
+#fader{
+	height: 200px;
+	width:200px;
+	background-color:#600;
+	margin-top: 30px;
+}
+
+#animator{
+	height: 200px;
+	width:200px;
+	background-color:#993;
+	margin-top: 30px;
+}
+
+#fadebutton {
+position: relative;
+margin-bottom: 0em;
+margin-left: 5em;
+margin-top: 5em;
+
+}
+
+.scream {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+
+}
+
+
